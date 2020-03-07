@@ -1,0 +1,11 @@
+.containerPosts{
+  margin-top: 5rem;
+  display: inline-block;
+  width: 100%;
+  max-width: 700px;
+}
+.linkPost:hover{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.54);
+}
+

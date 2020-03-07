@@ -1,0 +1,72 @@
+.itemPreviewDesc {
+  max-width: none;
+  width: 100%;
+}
+.itemPreviewImage{
+  width: 100%;
+    flex-flow: column;
+    max-width: 80px;
+}
+.itemPreviewImage img{
+  max-width: 100%;
+  height: auto;
+}
+.itemPreviewCategory {
+  color: #757575;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.titleItem{ 
+  color: rgba(0, 0, 0, 0.84);
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  overflow: hidden !important;
+  max-height: 84px !important;
+  text-overflow: ellipsis !important;
+  margin-bottom: .25em;
+}
+
+.itemDescription{
+  color: rgba(0, 0, 0, 0.54);
+    font-size: 1rem;
+    overflow: hidden !important;
+    max-height: 40px !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical;
+}
+
+.itemPreview {
+  margin-bottom: 2rem;
+}
+.ellipsisText{
+  white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+}
+
+.itemPreviewAutor,
+.itemPreviewGroup{
+  color: rgba(0, 0, 0, 0.84);
+}
+
+.itemPreviewText{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: .875rem;
+}
+
+.itemPreviewTimeago{
+  color: rgba(0, 0, 0, 0.54);
+}
+.itemPreviewIcon{
+  font-size: .875rem;
+}
+
+@media screen and (min-width: 768px){
+  .itemPreviewImage {
+    max-width: 150px;
+  }
+}

@@ -3,7 +3,7 @@ import React from 'react'
 function AppButton (props) {
   const styles = ['btn']
   const {
-    type = 'buttton',
+    type = 'button',
     text,
     size,
     className

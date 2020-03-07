@@ -1,13 +1,17 @@
 import React from 'react'
 
 import NavbarNav from './NavbarNav'
-import NavbarFormSearch from './NavbarFormSearch'
+// import NavbarFormSearch from './NavbarFormSearch'
 
-function NavbarCollapse () {
+function NavbarCollapse (props) {
+  const styles = ['collapse', 'navbar-collapse']
+  if (props.active) styles.push('show')
+
+  const className = styles.join(' ')
+
   return (
-    <div className='collapse navbar-collapse' id='navbarsExampleDefault'>
+    <div className={`${className} justify-content-end`}>
       <NavbarNav />
-      <NavbarFormSearch />
     </div>
   )
 }

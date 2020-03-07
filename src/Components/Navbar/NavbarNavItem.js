@@ -1,10 +1,17 @@
 import React from 'react'
+// navigation con props.history
+import { Link } from 'react-router-dom'
 
 function NavbarItem (props) {
   console.log(props.text)
   return (
     <li className='nav-item'>
-      <a className='nav-link' href={props.to}>{props.text}</a>
+      <Link
+        className={`nav-link ${props.extraClass}`}
+        to={props.to}
+      >
+        {props.text}
+      </Link>
     </li>
   )
 }

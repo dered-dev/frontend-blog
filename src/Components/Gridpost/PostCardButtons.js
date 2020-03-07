@@ -1,0 +1,28 @@
+import React from 'react'
+import AppButton from '../AppButton'
+
+function PostCardButtons (props) {
+  return (
+    <div className='btn-group'>
+      {
+        props.view && (
+          <AppButton
+            text='View'
+            size='sm'
+            className='btn-outline-secondary'
+          />
+        )
+      }
+      {
+        props.edit && (
+          <AppButton
+            text='Edit'
+            size='sm'
+            className='btn-outline-secondary'
+          />
+        )
+      }
+    </div>
+  )
+}
+export default PostCardButtons
